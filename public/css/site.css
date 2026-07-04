@@ -189,6 +189,7 @@ select {
   display: flex;
   gap: 0.6rem;
   overflow-x: auto;
+  scroll-padding-inline: 0.5rem;
   scrollbar-width: none;
 }
 
@@ -234,6 +235,10 @@ select {
 
 .brand-tab--tori.active {
   background: linear-gradient(135deg, #543729, #7b5846);
+}
+
+.brand-tab--drink.active {
+  background: linear-gradient(135deg, #147c9c, #39b8d8);
 }
 
 .brand-tab:focus-visible {
@@ -292,6 +297,11 @@ select {
   --brand-b: #7b5846;
 }
 
+.brand-tab--drink {
+  --brand-a: #147c9c;
+  --brand-b: #39b8d8;
+}
+
 .brand-mark--cbite {
   --brand-a: #f57e20;
   --brand-b: #ffb25a;
@@ -312,6 +322,11 @@ select {
   --brand-b: #7b5846;
 }
 
+.brand-mark--drink {
+  --brand-a: #147c9c;
+  --brand-b: #39b8d8;
+}
+
 #brand-cbite .brand-section-title {
   color: #f57e20;
 }
@@ -326,6 +341,10 @@ select {
 
 #brand-tori .brand-section-title {
   color: #543729;
+}
+
+#brand-drink .brand-section-title {
+  color: #147c9c;
 }
 
 .menu-body {

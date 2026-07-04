@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Data\CbiteMenuData;
+use App\Data\DrinkMenuData;
 use App\Data\MamaMenuData;
 use App\Data\SooChickenMenuData;
 use App\Data\ToriLabMenuData;
@@ -17,6 +18,7 @@ class HomeController extends Controller
             'mama'  => MamaMenuData::get(),
             'soo'   => SooChickenMenuData::get(),
             'tori'  => ToriLabMenuData::get(),
+            'drink' => DrinkMenuData::get(),
         ]);
     }
 

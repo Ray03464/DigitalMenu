@@ -9,12 +9,14 @@
         ['id' => $mama->id,  'title' => $mama->title,  'logo' => '/image/brandLogo/mamafriedrice.png', 'alt' => 'Mama Fried Rice logo'],
         ['id' => $soo->id,   'title' => $soo->title,   'logo' => '/image/brandLogo/soochicken.png',    'alt' => 'Soo Chicken logo'],
         ['id' => $tori->id,  'title' => $tori->title,  'logo' => '/image/brandLogo/torilab.jpg',       'alt' => 'Tori Lab logo'],
+        ['id' => $drink->id, 'title' => $drink->title, 'logo' => '/image/brandLogo/drinklogo.png',     'alt' => 'Drinks logo'],
     ];
     $sections = [
         ['brand' => $cbite],
         ['brand' => $mama],
         ['brand' => $soo],
         ['brand' => $tori],
+        ['brand' => $drink],
     ];
 @endphp
 

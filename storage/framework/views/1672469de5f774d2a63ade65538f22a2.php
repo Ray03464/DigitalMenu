@@ -9,7 +9,8 @@
              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1544025162-d76694265947?w=480&q=75';" />
     </div>
     <div class="product-body">
-        <h4 class="product-name"><?php echo e($product->name); ?></h4>
+        <h4 class="product-name"> <?php echo e($product->number); ?> &nbsp; <?php echo e($product->name); ?></h4>
+        
         <div class="product-price">
             <span>$<?php echo e($product->formattedPriceUsd()); ?></span>
             <?php if($product->priceKhr !== null): ?>
