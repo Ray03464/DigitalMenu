@@ -8,7 +8,6 @@ class MenuCategory
         public readonly string $name,
         public readonly array $products,
         public readonly ?string $code = null,
-        public readonly ?string $nameKhmer = null,
         public readonly ?string $note = null,
     ) {}
 }

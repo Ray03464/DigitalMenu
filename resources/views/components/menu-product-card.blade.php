@@ -13,9 +13,6 @@
         
         <div class="product-price">
             <span>${{ $product->formattedPriceUsd() }}</span>
-            @if ($product->priceKhr !== null)
-                <span>៛{{ $product->formattedPriceKhr() }}</span>
-            @endif
         </div>
     </div>
 </article>

@@ -6,7 +6,6 @@ class CbiteMenuData
 {
     private const IMG = '/image/cbitemenu';
     private const SIGNATURE_PRICE = 3.50;
-    private const SIGNATURE_KHR = 14000;
 
     public static function get(): BrandMenu
     {
@@ -26,7 +25,6 @@ class CbiteMenuData
                             'Crunchy boneless chicken feet pickled with vinegar, garlic, and light spices. Refreshing, savory, and perfectly balanced. Best enjoyed chilled.',
                             self::SIGNATURE_PRICE,
                             self::IMG . '/01.jpg',
-                            self::SIGNATURE_KHR,
                             badge: '⭐ Signature'
                         ),
                         self::product(
@@ -35,7 +33,6 @@ class CbiteMenuData
                             'Crunchy boneless chicken feet pickled with chili, vinegar, and garlic. Bold spicy-sour kick, refreshing and addictive. Best enjoyed chilled.',
                             self::SIGNATURE_PRICE,
                             self::IMG . '/02.jpg',
-                            self::SIGNATURE_KHR
                         ),
                         self::product(
                             'CB 03.',
@@ -43,7 +40,6 @@ class CbiteMenuData
                             'Crunchy boneless chicken feet pickled with Sichuan mala spices, garlic, and light vinegar. Numbing, spicy, and aromatic — bold yet refreshing. Best enjoyed chilled.',
                             self::SIGNATURE_PRICE,
                             self::IMG . '/03.jpg',
-                            self::SIGNATURE_KHR
                         ),
                         self::product(
                             'CB 04.',
@@ -51,7 +47,6 @@ class CbiteMenuData
                             'Crunchy boneless chicken feet pickled with fermented chili, garlic, and light vinegar. Bright chili aroma, mildly sour, and deeply flavorful. Best enjoyed chilled.',
                             self::SIGNATURE_PRICE,
                             self::IMG . '/04.jpg',
-                            self::SIGNATURE_KHR
                         ),
                         self::product(
                             'CB 05.',
@@ -59,7 +54,6 @@ class CbiteMenuData
                             'Boneless chicken feet marinated in a fragrant garlic brine. Savory, refreshing, and perfect as a cold snack or add-on.',
                             self::SIGNATURE_PRICE,
                             self::IMG . '/05.jpg',
-                            self::SIGNATURE_KHR
                         ),
                         self::product(
                             'CB 06.',
@@ -67,7 +61,6 @@ class CbiteMenuData
                             'Thin-sliced pig ear with a crunchy, chewy texture, pickled with vinegar, garlic, and light spices. Clean, savory, and refreshing — a classic cold snack best enjoyed chilled.',
                             self::SIGNATURE_PRICE,
                             self::IMG . '/06.png',
-                            self::SIGNATURE_KHR
                         ),
                     ]
                 ),
@@ -81,7 +74,6 @@ class CbiteMenuData
                             "Light cold noodle snack with chewy noodles, pickled vegetables, and shrimp, tossed in CBITE's classic refreshing sauce. Designed as a mini portion for light eating.",
                             2.90,
                             self::IMG . '/07.png',
-                            12000
                         ),
                     ]
                 ),
@@ -95,7 +87,6 @@ class CbiteMenuData
                             'Crispy golden French fries, lightly salted.',
                             1.50,
                             self::IMG . '/08.jpg',
-                            6000
                         ),
                         self::product(
                             'CB 09.',
@@ -103,7 +94,6 @@ class CbiteMenuData
                             'Crispy chicken nuggets, golden on the outside and tender inside. A perfect hot snack or side dish.',
                             2.80,
                             self::IMG . '/09.jpg',
-                            11000
                         ),
                         self::product(
                             'CB 10.',
@@ -111,7 +101,6 @@ class CbiteMenuData
                             'Crispy chicken nuggets, golden on the outside and tender inside. A perfect hot snack or side dish.',
                             4.20,
                             self::IMG . '/10.jpg',
-                            17000
                         ),
                     ]
                 ),
@@ -125,7 +114,6 @@ class CbiteMenuData
                             "A refreshing combo featuring our signature cold noodles, pickled chicken feet, and one chilled Coke.",
                             6.90,
                             self::IMG . '/11.jpg',
-                            28000,
                             badge: 'Combo'
                         ),
                         self::product(
@@ -134,7 +122,6 @@ class CbiteMenuData
                             'A classic hot snack combo with crispy French fries, 6 pieces of chicken nuggets, and one chilled Coke.',
                             4.70,
                             self::IMG . '/12.jpg',
-                            19000,
                             badge: 'Combo'
                         ),
                     ]
@@ -149,10 +136,9 @@ class CbiteMenuData
         string $description,
         float $priceUsd,
         string $imageUrl,
-        ?int $priceKhr = null,
         ?string $badge = null,
         bool $containImage = false
     ): MenuProduct {
-        return new MenuProduct($number, $name, $description, $priceUsd, $imageUrl, priceKhr: $priceKhr, badge: $badge, containImage: $containImage);
+        return new MenuProduct($number, $name, $description, $priceUsd, $imageUrl, badge: $badge, containImage: $containImage);
     }
 }
