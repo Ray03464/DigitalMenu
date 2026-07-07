@@ -25,8 +25,7 @@ QR LANDING PAGE
         <div class="brand-pill"><img class="brand-logo-img" src="/image/brandlogo/soochicken.png" alt="SOO logo"> Soo Chicken</div>
         <div class="brand-pill"><img class="brand-logo-img" src="/image/brandlogo/torilab.jpg" alt="TORI logo"> Tori Lab</div>
     </div>
-
-    <a class="view-menu-btn" href="{{ route('home') }}">Browse Full Menu →</a>
+    
 </div>
 @endsection
 
