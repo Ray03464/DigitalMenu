@@ -58,7 +58,7 @@ class MamaMenuData
                         self::product('MFR 20.', 'Korean BBQ Chicken Fried Rice', 'Fluffy rice tossed with tender chicken marinated in Korean BBQ sauce, egg, and stir-fried greens.', self::PRICE_380, '20.jpg', self::KHR_380),
                         self::product('MFR 22.', 'Roasted Duck Breast Fried Rice', 'Premium fried rice cooked with dark soy sauce, roasted duck breast, egg, and scallions.', self::PRICE_380, '22.jpg', self::KHR_380),
                         self::product('MFR 24.', 'Beef Laksa Fried Rice', 'A bold fusion creation packing laksa curry paste, beef, and egg into a wok-fried rice bowl.', self::PRICE_430, '24.jpg', self::KHR_430),
-                        self::product('MFR 25.', 'Mackerel Coconut Fried Rice', 'Deeply savory fried rice blending creamy coconut, flaked mackerel, egg, and local herbs.', self::PRICE_380, '25.jpg', self::KHR_380),
+                        self::product('MFR 25.', 'Mackerel Coconut Fried Rice', 'Deeply savory fried rice blending creamy coconut, flaked mackerel, egg, and local herbs.', self::PRICE_380, '25.png', self::KHR_380),
                     ]
                 ),
                 new MenuCategory(
