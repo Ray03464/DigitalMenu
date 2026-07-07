@@ -12,7 +12,7 @@ class ToriLabMenuData
             id: 'tori',
             title: 'Tori Lab',
             accentCssVar: '--tori',
-            bannerImageUrl: '/image/brandLogo/torilab.jpg',
+            bannerImageUrl: '/image/brandlogo/torilab.jpg',
             categories: [
                 new MenuCategory(
                     code: 'A',

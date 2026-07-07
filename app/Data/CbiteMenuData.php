@@ -14,7 +14,7 @@ class CbiteMenuData
             id: 'cbite',
             title: 'CBITE',
             accentCssVar: '--cbite',
-            bannerImageUrl: '/image/brandLogo/cbite.png',
+            bannerImageUrl: '/image/brandlogo/cbite.png',
             categories: [
                 new MenuCategory(
                     code: 'A',

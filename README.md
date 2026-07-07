@@ -27,6 +27,81 @@ php artisan serve
 
 Then open http://localhost:8000
 
+## cPanel Deployment
+
+Use PHP 8.2 or newer. Your domain document root should point to the Laravel
+`public/` directory, not the project root:
+
+```
+/home/username/digital-menu/public
+```
+
+Before uploading, install optimized production dependencies:
+
+```bash
+composer install --no-dev --optimize-autoloader
+php artisan optimize
+```
+
+On cPanel, copy `.env.cpanel.example` to `.env`, set your real `APP_URL`, and
+generate an app key if one has not already been set:
+
+```bash
+php artisan key:generate
+```
+
+Make sure these directories are writable by PHP:
+
+```
+storage/
+bootstrap/cache/
+```
+
+Do not expose or upload local-only folders such as `.git/`, `.agents/`,
+`.codex/`, `storage/logs/`, `storage/framework/views/`, or
+`storage/framework/sessions/`.
+
+## Render Test Deployment
+
+Render deploys Laravel with Docker. This repo includes:
+
+```
+Dockerfile
+.dockerignore
+render.yaml
+conf/nginx/nginx-site.conf
+scripts/00-laravel-deploy.sh
+.env.render.example
+```
+
+Push the repo to GitHub, then create a new Render Web Service from that repo.
+Choose Docker as the runtime. If Render detects `render.yaml`, it can create
+the service from the blueprint.
+
+Set these environment variables in Render:
+
+```
+APP_ENV=production
+APP_DEBUG=false
+APP_KEY=base64:your-generated-key
+APP_URL=https://your-render-service.onrender.com
+LOG_CHANNEL=stderr
+LOG_LEVEL=error
+CACHE_STORE=file
+SESSION_DRIVER=file
+DB_CONNECTION=sqlite
+DB_DATABASE=:memory:
+```
+
+Generate an app key locally with:
+
+```bash
+php artisan key:generate --show
+```
+
+Use the generated value for `APP_KEY`. After the first deploy finishes, copy
+your Render service URL into `APP_URL` and redeploy.
+
 ## Image Assets
 
 Place your image folders inside `public/`:
@@ -34,7 +109,7 @@ Place your image folders inside `public/`:
 ```
 public/
   image/
-    brandLogo/
+    brandlogo/
       cbite.jpg
       mamafriedrice.jpg
       soochicken.png

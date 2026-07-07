@@ -5,11 +5,11 @@
 @section('content')
 @php
     $brands = [
-        ['id' => $cbite->id, 'title' => $cbite->title, 'logo' => '/image/brandLogo/cbite.png',         'alt' => 'CBITE logo'],
-        ['id' => $mama->id,  'title' => $mama->title,  'logo' => '/image/brandLogo/mamafriedrice.png', 'alt' => 'Mama Fried Rice logo'],
-        ['id' => $soo->id,   'title' => $soo->title,   'logo' => '/image/brandLogo/soochicken.png',    'alt' => 'Soo Chicken logo'],
-        ['id' => $tori->id,  'title' => $tori->title,  'logo' => '/image/brandLogo/torilab.jpg',       'alt' => 'Tori Lab logo'],
-        ['id' => $drink->id, 'title' => $drink->title, 'logo' => '/image/brandLogo/drinklogo.png',     'alt' => 'Drinks logo'],
+        ['id' => $cbite->id, 'title' => $cbite->title, 'logo' => '/image/brandlogo/cbite.png',         'alt' => 'CBITE logo'],
+        ['id' => $mama->id,  'title' => $mama->title,  'logo' => '/image/brandlogo/mamafriedrice.png', 'alt' => 'Mama Fried Rice logo'],
+        ['id' => $soo->id,   'title' => $soo->title,   'logo' => '/image/brandlogo/soochicken.png',    'alt' => 'Soo Chicken logo'],
+        ['id' => $tori->id,  'title' => $tori->title,  'logo' => '/image/brandlogo/torilab.jpg',       'alt' => 'Tori Lab logo'],
+        ['id' => $drink->id, 'title' => $drink->title, 'logo' => '/image/brandlogo/drinklogo.png',     'alt' => 'Drinks logo'],
     ];
     $sections = [
         ['brand' => $cbite],

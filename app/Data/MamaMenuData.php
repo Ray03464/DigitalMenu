@@ -18,7 +18,7 @@ class MamaMenuData
             id: 'mama',
             title: 'Mama Fried Rice',
             accentCssVar: '--mama',
-            bannerImageUrl: '/image/brandLogo/mamafriedrice.jpg',
+            bannerImageUrl: '/image/brandlogo/mamafriedrice.jpg',
             categories: [
                 new MenuCategory(
                     code: 'A',
